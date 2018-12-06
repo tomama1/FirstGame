@@ -1,0 +1,29 @@
+
+class Name 
+    v name
+    m change name
+
+class Level
+    v Level
+    m levelup
+
+class type
+    v name
+
+class Ptype : type
+    l weak: Mtypes
+    l strong: Mtypes
+
+class Mtype : type
+    l weak: Ptypes
+    l strong: Ptypes
+
+class Health
+    v current health
+    v max health
+    m restore health(int) {void}
+    m restorefullhealth() {void}
+    m remove health(int){void}
+
+
+
